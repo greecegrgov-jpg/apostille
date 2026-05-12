@@ -22,32 +22,34 @@ body{
 .topbar{
     background:#006633;
     color:white;
-    padding:15px;
+    padding:20px;
     text-align:center;
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
 }
 
 .card-box{
     background:white;
     padding:30px;
-    border-radius:10px;
+    border-radius:12px;
     margin-top:40px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 15px rgba(0,0,0,0.15);
 }
 
 .verify-btn{
     width:100%;
+    font-size:18px;
 }
 
 .status{
     background:#198754;
     color:white;
-    padding:10px;
+    padding:12px;
     border-radius:5px;
     text-align:center;
     margin-top:20px;
     font-weight:bold;
+    font-size:18px;
 }
 
 iframe{
@@ -62,6 +64,24 @@ iframe{
     color:white;
     text-align:center;
     padding:15px;
+}
+
+.qr-box{
+    background:#f8f9fa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    margin-top:30px;
+}
+
+.qr-box img{
+    margin-top:10px;
+}
+
+.table th{
+    width:35%;
+    background:#f1f1f1;
 }
 
 </style>
@@ -100,11 +120,45 @@ Verify Document
 </button>
 
 <div class="status">
-Verified Successfully
+DOCUMENT VERIFIED SUCCESSFULLY
 </div>
 
+<table class="table table-bordered mt-4">
+
+<tr>
+<th>Tracking ID</th>
+<td>AP-2026-00125</td>
+</tr>
+
+<tr>
+<th>Applicant Name</th>
+<td>Muhammad Abdullah Tariq</td>
+</tr>
+
+<tr>
+<th>Document Type</th>
+<td>Educational Certificate</td>
+</tr>
+
+<tr>
+<th>Country</th>
+<td>Pakistan</td>
+</tr>
+
+<tr>
+<th>Verification Status</th>
+<td>Verified</td>
+</tr>
+
+<tr>
+<th>Issue Date</th>
+<td>13 May 2026</td>
+</tr>
+
+</table>
+
 <h4 class="mt-4">
-Preview Apostille
+Preview Document
 </h4>
 
 <iframe
@@ -120,6 +174,27 @@ class="btn btn-primary mt-3">
 
 Download PDF
 </a>
+
+<div class="qr-box">
+
+<h4>
+QR Verification
+</h4>
+
+<p>
+Scan this QR code to verify document authenticity
+</p>
+
+<img
+src="images/qr.png"
+width="180">
+
+<p class="mt-3">
+Verification Code:
+<b>PK-VERIFY-7788</b>
+</p>
+
+</div>
 
 </div>
 
