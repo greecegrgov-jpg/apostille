@@ -14,7 +14,7 @@
 
 body{
     margin:0;
-    background:#f4f4f4;
+    background:#f2f2f2;
     font-family:Arial,sans-serif;
 }
 
@@ -48,14 +48,14 @@ body{
 
 .navbar-custom{
     background:#005c2e;
-    padding:20px;
+    padding:18px;
 }
 
 .navbar-custom ul{
     list-style:none;
     display:flex;
     justify-content:center;
-    gap:60px;
+    gap:55px;
     margin:0;
     padding:0;
 }
@@ -63,14 +63,14 @@ body{
 .navbar-custom a{
     color:white;
     text-decoration:none;
-    font-size:15px;
+    font-size:14px;
 }
 
 /* BREADCRUMB */
 
 .breadcrumb-box{
     padding:25px 40px;
-    color:#999;
+    color:#888;
     font-size:14px;
 }
 
@@ -80,13 +80,13 @@ body{
     background:white;
     max-width:1500px;
     margin:auto;
-    padding:70px;
+    padding:60px;
 }
 
 .main-title{
     text-align:center;
-    font-size:62px;
-    color:#1f2757;
+    font-size:58px;
+    color:#1c2455;
     font-weight:bold;
 }
 
@@ -94,13 +94,13 @@ body{
     text-align:center;
     margin-top:20px;
     color:#444;
-    font-size:22px;
+    font-size:20px;
 }
 
 .info-text{
     margin-top:50px;
-    font-size:22px;
-    line-height:1.8;
+    font-size:21px;
+    line-height:1.7;
 }
 
 /* CERTIFICATE */
@@ -114,41 +114,41 @@ body{
 .apostille-paper{
 
     background-image:url('images/apostille-bg.png');
-    background-size:cover;
-    background-position:center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 
-    background-color:white;
+    width:1050px;
+    min-height:1400px;
 
-    width:1100px;
+    padding:55px;
 
-    padding:30px;
-
-    border:8px solid #222;
+    position:relative;
 }
 
 /* TITLE */
 
 .apostille-title{
     text-align:center;
-    font-size:60px;
+    font-size:62px;
     font-family:"Times New Roman";
     font-weight:bold;
-    margin-bottom:0;
+    margin-top:0;
+    margin-bottom:5px;
 }
 
 .apostille-subtitle{
     text-align:center;
-    font-size:18px;
-    margin-bottom:25px;
+    font-size:19px;
+    margin-bottom:35px;
     font-family:"Times New Roman";
 }
 
-/* CONTENT */
+/* ROWS */
 
 .apostille-content{
-    font-size:20px;
-    line-height:1.7;
     color:black;
+    font-size:21px;
+    line-height:1.6;
 }
 
 .row-line{
@@ -164,7 +164,7 @@ body{
 
 .left-number{
     width:40px;
-    font-size:18px;
+    font-size:20px;
 }
 
 .left-text{
@@ -173,17 +173,17 @@ body{
 }
 
 .right-text{
-    margin-left:250px;
-    margin-top:-38px;
+    margin-left:330px;
+    margin-top:-40px;
 }
 
 /* CERTIFIED */
 
 .certified-text{
     text-align:center;
-    font-size:40px;
+    font-size:42px;
     font-family:cursive;
-    margin:18px 0;
+    margin:25px 0;
 }
 
 /* BOTTOM */
@@ -191,8 +191,8 @@ body{
 .bottom-section{
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    margin-top:25px;
+    align-items:flex-end;
+    margin-top:30px;
 }
 
 .date-box{
@@ -200,31 +200,31 @@ body{
 }
 
 .qr-box-inside img{
-    width:150px;
-    border:3px solid #333;
+    width:160px;
+    border:2px solid #222;
+}
+
+.signature-box{
+    text-align:center;
+    font-size:13px;
 }
 
 .signature-box img{
     width:220px;
 }
 
-.signature-box{
-    text-align:center;
-    font-size:14px;
-}
+/* FOOTER */
 
 .seal-text{
-    margin-top:15px;
+    margin-top:20px;
     font-size:18px;
 }
 
-/* FOOTER NOTE */
-
 .footer-note{
-    margin-top:25px;
+    margin-top:35px;
     text-align:center;
     font-size:14px;
-    line-height:1.6;
+    line-height:1.5;
 }
 
 /* PDF */
@@ -249,7 +249,7 @@ iframe{
 /* FOOTER */
 
 .footer{
-    margin-top:80px;
+    margin-top:70px;
     background:#005c2e;
     color:white;
     text-align:center;
@@ -261,7 +261,7 @@ iframe{
 @media(max-width:768px){
 
 .main-title{
-    font-size:35px;
+    font-size:34px;
 }
 
 .main-content{
@@ -274,8 +274,13 @@ iframe{
 }
 
 .apostille-paper{
+
     width:100%;
-    padding:15px;
+    min-height:auto;
+
+    padding:20px;
+
+    background-size:100% 100%;
 }
 
 .apostille-title{
@@ -283,7 +288,11 @@ iframe{
 }
 
 .apostille-content{
-    font-size:16px;
+    font-size:15px;
+}
+
+.row-line{
+    flex-direction:column;
 }
 
 .right-text{
@@ -293,7 +302,8 @@ iframe{
 
 .bottom-section{
     flex-direction:column;
-    gap:30px;
+    gap:25px;
+    align-items:center;
 }
 
 }
@@ -330,15 +340,10 @@ Government of Pakistan
 <ul>
 
 <li><a href="#">HOME</a></li>
-
 <li><a href="#">CHECKLIST</a></li>
-
 <li><a href="#">DOCUMENTS</a></li>
-
 <li><a href="#">APOSTILLE COUNTRY LIST</a></li>
-
 <li><a href="#">FEE DETAILS</a></li>
-
 <li><a href="#">VERIFY APOSTILLE</a></li>
 
 </ul>
@@ -392,6 +397,8 @@ APOSTILLE
 
 <div class="apostille-content">
 
+<!-- 1 -->
+
 <div class="row-line">
 
 <div class="left-number">
@@ -400,7 +407,8 @@ APOSTILLE
 
 <div class="left-text">
 
-Country<br>
+Country
+<br>
 
 <b>Pakistan</b>
 
@@ -416,6 +424,8 @@ This Public Document
 </div>
 
 </div>
+
+<!-- 2 -->
 
 <div class="row-line">
 
@@ -434,6 +444,8 @@ has been signed by
 
 </div>
 
+<!-- 3 -->
+
 <div class="row-line">
 
 <div class="left-number">
@@ -446,12 +458,15 @@ acting in the capacity of
 <br>
 
 <b>
-Secretary Municipal Committee Tehsil & District Mandi Bahauddin
+Secretary Municipal Committee
+Tehsil & District Mandi Bahauddin
 </b>
 
 </div>
 
 </div>
+
+<!-- 4 -->
 
 <div class="row-line">
 
@@ -465,7 +480,8 @@ bears the seal/stamp of
 <br>
 
 <b>
-Secretary Municipal Committee Tehsil & District Mandi Bahauddin
+Secretary Municipal Committee
+Tehsil & District Mandi Bahauddin
 </b>
 
 </div>
@@ -475,6 +491,8 @@ Secretary Municipal Committee Tehsil & District Mandi Bahauddin
 <div class="certified-text">
 Certified
 </div>
+
+<!-- 5 -->
 
 <div class="row-line">
 
@@ -493,6 +511,8 @@ at
 
 </div>
 
+<!-- 6 -->
+
 <div class="row-line">
 
 <div class="left-number">
@@ -509,6 +529,8 @@ the
 </div>
 
 </div>
+
+<!-- 7 -->
 
 <div class="row-line">
 
@@ -527,6 +549,8 @@ by
 
 </div>
 
+<!-- 8 -->
+
 <div class="row-line">
 
 <div class="left-number">
@@ -543,6 +567,8 @@ No
 </div>
 
 </div>
+
+<!-- BOTTOM -->
 
 <div class="bottom-section">
 
