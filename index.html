@@ -14,11 +14,11 @@
 
 body{
     margin:0;
-    background:#f5f5f5;
-    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    font-family:Arial,sans-serif;
 }
 
-/* TOP HEADER */
+/* HEADER */
 
 .top-header{
     background:white;
@@ -49,7 +49,7 @@ body{
 
 .navbar-custom{
     background:#005c2e;
-    padding:20px;
+    padding:22px;
 }
 
 .navbar-custom ul{
@@ -79,65 +79,139 @@ body{
 
 .main-content{
     background:white;
-    max-width:1200px;
+    max-width:1400px;
     margin:auto;
-    padding:60px;
+    padding:70px;
 }
 
 .main-title{
     text-align:center;
-    font-size:58px;
+    font-size:65px;
+    color:#1d2354;
     font-weight:bold;
-    color:#1f2757;
 }
 
 .subtitle{
     text-align:center;
-    margin-top:20px;
-    color:#555;
-    font-size:22px;
+    font-size:23px;
+    margin-top:25px;
+    color:#444;
 }
 
 .info-text{
-    margin-top:50px;
-    font-size:20px;
+    margin-top:60px;
+    font-size:23px;
     line-height:1.8;
 }
 
 /* CERTIFICATE */
 
-.certificate-box{
-    margin-top:60px;
-    text-align:center;
-}
-
-.certificate-box img{
-    max-width:700px;
-    width:100%;
-    border:10px solid #eee;
-}
-
-/* QR */
-
-.qr-section{
+.certificate-wrapper{
     margin-top:70px;
+    display:flex;
+    justify-content:center;
+}
+
+.apostille-paper{
+
+    background-image:url('images/apostille-bg.png');
+    background-size:cover;
+    background-position:center;
+
+    background-color:white;
+
+    width:900px;
+    min-height:1200px;
+
+    padding:40px;
+
+    border:12px solid #222;
+}
+
+.apostille-title{
+    text-align:center;
+    font-size:60px;
+    font-family:serif;
+    font-weight:bold;
+}
+
+.apostille-subtitle{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:40px;
+    font-family:serif;
+}
+
+.apostille-content{
+    font-size:24px;
+    line-height:1.9;
+}
+
+.row-line{
+    margin-bottom:28px;
+}
+
+.left-number{
+    display:inline-block;
+    width:40px;
+    font-weight:bold;
+}
+
+.left-text{
+    display:inline-block;
+    width:88%;
+}
+
+.right-text{
+    margin-left:60px;
+}
+
+.certified-text{
+    text-align:center;
+    font-size:42px;
+    font-family:cursive;
+    margin:40px 0;
+}
+
+.bottom-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:45px;
+}
+
+.qr-box-inside img{
+    width:170px;
+}
+
+.signature-box img{
+    width:180px;
+}
+
+.signature-box{
     text-align:center;
 }
 
-.qr-section img{
-    width:220px;
+.date-box{
+    font-size:24px;
 }
 
-.qr-text{
-    margin-top:20px;
-    font-size:20px;
-    color:#333;
+.seal-text{
+    margin-top:25px;
+    font-size:24px;
+}
+
+.footer-note{
+    margin-top:45px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.7;
 }
 
 /* PDF */
 
 .pdf-section{
-    margin-top:80px;
+    margin-top:90px;
 }
 
 iframe{
@@ -147,23 +221,20 @@ iframe{
     border-radius:10px;
 }
 
-/* DOWNLOAD */
-
 .download-btn{
-    margin-top:25px;
-    padding:14px 30px;
+    margin-top:30px;
+    padding:15px 35px;
     font-size:18px;
 }
 
 /* FOOTER */
 
 .footer{
-    margin-top:70px;
+    margin-top:80px;
     background:#005c2e;
     color:white;
     text-align:center;
     padding:20px;
-    font-size:15px;
 }
 
 /* MOBILE */
@@ -171,21 +242,38 @@ iframe{
 @media(max-width:768px){
 
 .main-title{
-    font-size:35px;
+    font-size:36px;
+}
+
+.main-content{
+    padding:20px;
 }
 
 .navbar-custom ul{
     flex-direction:column;
     gap:20px;
-    text-align:center;
 }
 
 .top-header{
     flex-direction:column;
 }
 
-.main-content{
-    padding:25px;
+.apostille-paper{
+    width:100%;
+    padding:20px;
+}
+
+.apostille-title{
+    font-size:40px;
+}
+
+.apostille-content{
+    font-size:18px;
+}
+
+.bottom-section{
+    flex-direction:column;
+    gap:30px;
 }
 
 }
@@ -205,8 +293,10 @@ iframe{
 <img src="images/logo.png">
 
 <div class="logo-text">
+
 Ministry of Foreign Affairs<br>
 Government of Pakistan
+
 </div>
 
 </div>
@@ -248,43 +338,203 @@ Home / Apostille Verification
 <div class="main-content">
 
 <div class="main-title">
+
 QR Code Verification Apostille Certificate
+
 </div>
 
 <div class="subtitle">
+
 This apostille certificate is issued by Ministry of Foreign Affairs Pakistan.
+
 </div>
 
 <div class="info-text">
 
-This apostille refers to <b>Birth Certificate / B Form</b>
-and issued on <b>N/A</b> and is Approved by
+This apostille refers to
+<b>Birth Certificate / B Form</b>
+and issued on
+<b>N/A</b>
+and is Approved by
 <b>Ministry of Foreign Affairs Pakistan</b>
 
 </div>
 
 <!-- CERTIFICATE -->
 
-<div class="certificate-box">
+<div class="certificate-wrapper">
 
-<img src="images/certificate.png">
+<div class="apostille-paper">
+
+<h1 class="apostille-title">
+APOSTILLE
+</h1>
+
+<h4 class="apostille-subtitle">
+(Convention de La Haye du 5 October 1961)
+</h4>
+
+<div class="apostille-content">
+
+<div class="row-line">
+
+<span class="left-number">1</span>
+
+<span class="left-text">
+
+Country Pakistan
+
+<div class="right-text">
+This Public Document<br>
+<b>Personal Document</b>
+</div>
+
+</span>
 
 </div>
 
-<!-- QR -->
+<div class="row-line">
 
-<div class="qr-section">
+<span class="left-number">2</span>
 
-<h2>
-QR Verification
-</h2>
+<span class="left-text">
+
+has been signed by<br>
+<b>NA</b>
+
+</span>
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">3</span>
+
+<span class="left-text">
+
+acting in the capacity of<br>
+
+<b>
+Secretary Municipal Committee
+Tehsil & District Mandi Bahauddin
+</b>
+
+</span>
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">4</span>
+
+<span class="left-text">
+
+bears the seal/stamp of<br>
+
+<b>
+Secretary Municipal Committee
+Tehsil & District Mandi Bahauddin
+</b>
+
+</span>
+
+</div>
+
+<div class="certified-text">
+
+Certified
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">5</span>
+
+<span class="left-text">
+
+at <b>Islamabad Pakistan</b>
+
+</span>
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">6</span>
+
+<span class="left-text">
+
+the <b>18 Feb 2026</b>
+
+</span>
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">7</span>
+
+<span class="left-text">
+
+by <b>Ministry of Foreign Affairs</b>
+
+</span>
+
+</div>
+
+<div class="row-line">
+
+<span class="left-number">8</span>
+
+<span class="left-text">
+
+No <b>APO-TVYN-EKZO-MFOU</b>
+
+</span>
+
+</div>
+
+<div class="bottom-section">
+
+<div class="date-box">
+
+Date: 18 Feb 2026
+
+</div>
+
+<div class="qr-box-inside">
 
 <img src="images/qr.png">
 
-<div class="qr-text">
+</div>
 
-Verification Code:
-<b>PK-VERIFY-7788</b>
+<div class="signature-box">
+
+<img src="images/sign.png">
+
+<p>
+Muhammad Farid Khan
+</p>
+
+</div>
+
+</div>
+
+<div class="seal-text">
+
+Seal/Stamp
+
+</div>
+
+<div class="footer-note">
+
+This apostille is not intended for use in Pakistan.
+It solely confirms the authenticity of the signature,
+seal, or stamp on the attached Pakistani public document.
+
+</div>
+
+</div>
 
 </div>
 
@@ -295,7 +545,9 @@ Verification Code:
 <div class="pdf-section">
 
 <h2 class="mb-4">
+
 Preview PDF Document
+
 </h2>
 
 <iframe src="pdf/preview/apostille.pdf"></iframe>
